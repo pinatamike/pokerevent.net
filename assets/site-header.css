@@ -33,3 +33,28 @@ header .pe-language span{display:none!important}
  header nav{gap:8px 12px!important;font-size:10px!important;line-height:1.5!important}
  .hero .hero-content,.event-hero .hero-content{padding-top:220px!important}
 }
+
+/* Larger brand, while retaining separate nav and language controls. */
+@media(min-width:1251px){
+ header{gap:clamp(10px,1vw,18px)!important;padding-left:max(3vw,20px)!important;padding-right:max(3vw,20px)!important}
+ header>.brand{flex:0 0 clamp(310px,26vw,420px)!important;max-width:420px!important}
+ header>.brand img{width:100%!important;max-width:420px!important;max-height:158px!important}
+ header nav{gap:clamp(8px,.85vw,16px)!important;font-size:clamp(10px,.76vw,12px)!important}
+ header>.btn{padding:12px 14px!important}
+ .hero .hero-content,.event-hero .hero-content{padding-top:clamp(225px,18vw,275px)!important}
+}
+@media(min-width:901px) and (max-width:1250px){
+ header>.brand{flex:0 0 clamp(270px,28vw,340px)!important;max-width:340px!important}
+ header>.brand img{max-width:340px!important;max-height:128px!important}
+ .hero .hero-content,.event-hero .hero-content{padding-top:265px!important}
+}
+@media(min-width:601px) and (max-width:900px){
+ header>.brand{flex:0 0 260px!important;max-width:260px!important}
+ header>.brand img{max-width:260px!important;max-height:100px!important}
+ .hero .hero-content,.event-hero .hero-content{padding-top:255px!important}
+}
+@media(max-width:600px){
+ header>.brand{flex:0 1 195px!important;max-width:195px!important}
+ header>.brand img{max-width:195px!important;max-height:78px!important}
+ .hero .hero-content,.event-hero .hero-content{padding-top:235px!important}
+}
