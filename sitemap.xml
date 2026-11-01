@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://pokerevent.net/</loc></url>
-  <url><loc>https://pokerevent.net/ufc-championship/</loc></url>
-  <url><loc>https://pokerevent.net/ufc-fight-night/</loc></url>
-  <url><loc>https://pokerevent.net/nfl-championship/</loc></url>
-  <url><loc>https://pokerevent.net/super-bowl/</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://pokerevent.net/</loc><xhtml:link rel="alternate" hreflang="en" href="https://pokerevent.net/"/><xhtml:link rel="alternate" hreflang="es" href="https://pokerevent.net/es/"/></url>
+  <url><loc>https://pokerevent.net/es/</loc><xhtml:link rel="alternate" hreflang="en" href="https://pokerevent.net/"/><xhtml:link rel="alternate" hreflang="es" href="https://pokerevent.net/es/"/></url>
+  <url><loc>https://pokerevent.net/ufc-championship/</loc><xhtml:link rel="alternate" hreflang="en" href="https://pokerevent.net/ufc-championship/"/><xhtml:link rel="alternate" hreflang="es" href="https://pokerevent.net/es/ufc-championship/"/></url>
+  <url><loc>https://pokerevent.net/es/ufc-championship/</loc><xhtml:link rel="alternate" hreflang="en" href="https://pokerevent.net/ufc-championship/"/><xhtml:link rel="alternate" hreflang="es" href="https://pokerevent.net/es/ufc-championship/"/></url>
+  <url><loc>https://pokerevent.net/ufc-fight-night/</loc><xhtml:link rel="alternate" hreflang="en" href="https://pokerevent.net/ufc-fight-night/"/><xhtml:link rel="alternate" hreflang="es" href="https://pokerevent.net/es/ufc-fight-night/"/></url>
+  <url><loc>https://pokerevent.net/es/ufc-fight-night/</loc><xhtml:link rel="alternate" hreflang="en" href="https://pokerevent.net/ufc-fight-night/"/><xhtml:link rel="alternate" hreflang="es" href="https://pokerevent.net/es/ufc-fight-night/"/></url>
+  <url><loc>https://pokerevent.net/nfl-championship/</loc><xhtml:link rel="alternate" hreflang="en" href="https://pokerevent.net/nfl-championship/"/><xhtml:link rel="alternate" hreflang="es" href="https://pokerevent.net/es/nfl-championship/"/></url>
+  <url><loc>https://pokerevent.net/es/nfl-championship/</loc><xhtml:link rel="alternate" hreflang="en" href="https://pokerevent.net/nfl-championship/"/><xhtml:link rel="alternate" hreflang="es" href="https://pokerevent.net/es/nfl-championship/"/></url>
+  <url><loc>https://pokerevent.net/super-bowl/</loc><xhtml:link rel="alternate" hreflang="en" href="https://pokerevent.net/super-bowl/"/><xhtml:link rel="alternate" hreflang="es" href="https://pokerevent.net/es/super-bowl/"/></url>
+  <url><loc>https://pokerevent.net/es/super-bowl/</loc><xhtml:link rel="alternate" hreflang="en" href="https://pokerevent.net/super-bowl/"/><xhtml:link rel="alternate" hreflang="es" href="https://pokerevent.net/es/super-bowl/"/></url>
 </urlset>
