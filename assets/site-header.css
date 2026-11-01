@@ -1,0 +1,35 @@
+/* Shared responsive header and visible bilingual navigation: all 10 pages. */
+header{display:flex!important;align-items:center!important;justify-content:space-between!important;flex-wrap:nowrap!important;gap:clamp(10px,1.2vw,20px)!important;padding:20px max(3vw,20px)!important;min-height:116px;isolation:isolate}
+header>.brand{display:flex!important;align-items:center!important;flex:0 1 270px!important;min-width:0!important;max-width:270px!important;line-height:1!important}
+header>.brand img{display:block!important;width:100%!important;max-width:270px!important;max-height:100px!important;height:auto!important;object-fit:contain!important;object-position:left center!important}
+header nav{display:flex;align-items:center;justify-content:center;flex:1 1 auto;min-width:0;gap:clamp(9px,1.15vw,19px)!important;font-size:clamp(10px,.85vw,13px)!important;letter-spacing:.055em!important}
+header nav a{white-space:nowrap}
+header>.btn{flex:0 0 auto;padding:13px 17px!important;white-space:nowrap}
+header .pe-language{display:flex!important;align-items:stretch!important;flex:0 0 auto!important;margin-left:0!important;min-width:108px!important;min-height:44px!important;gap:0!important;background:#101513!important;border:2px solid #d5b77d!important;border-radius:5px!important;overflow:hidden!important;z-index:10!important;box-shadow:0 2px 12px #0009!important}
+header .pe-language button{font-family:'DM Sans',Arial,sans-serif!important;font-size:15px!important;font-weight:800!important;min-width:52px!important;padding:10px 11px!important;border:0!important;color:#f5f0e6!important;background:transparent!important;cursor:pointer!important;opacity:1!important}
+header .pe-language button[aria-pressed="true"]{background:#d5b77d!important;color:#101513!important}
+header .pe-language span{display:none!important}
+.hero .hero-content,.event-hero .hero-content{padding-top:clamp(205px,16vw,245px)!important}
+@media(max-width:1250px){
+ header{flex-wrap:wrap!important;justify-content:space-between!important;row-gap:8px!important;padding:16px max(4vw,18px)!important}
+ header>.brand{flex:0 1 240px!important;max-width:240px!important}
+ header>.brand img{max-width:240px!important;max-height:88px!important}
+ header nav{order:4;flex:1 0 100%!important;justify-content:center!important;flex-wrap:wrap;gap:12px 20px!important}
+ header>.btn{margin-left:auto}
+ .hero .hero-content,.event-hero .hero-content{padding-top:235px!important}
+}
+@media(max-width:900px){
+ header nav{display:flex!important;font-size:11px!important}
+ header>.brand{flex-basis:200px!important;max-width:200px!important}
+ header>.brand img{max-width:200px!important;max-height:75px!important}
+}
+@media(max-width:600px){
+ header{padding:12px 15px!important;gap:8px!important}
+ header>.brand{flex:0 1 150px!important;max-width:150px!important}
+ header>.brand img{max-width:150px!important;max-height:62px!important}
+ header>.btn{display:none!important}
+ header .pe-language{min-width:98px!important;min-height:40px!important;margin-left:auto!important}
+ header .pe-language button{min-width:47px!important;font-size:14px!important;padding:8px!important}
+ header nav{gap:8px 12px!important;font-size:10px!important;line-height:1.5!important}
+ .hero .hero-content,.event-hero .hero-content{padding-top:220px!important}
+}
