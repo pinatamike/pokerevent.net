@@ -1,1 +1,8 @@
-.pe-language{display:flex;align-items:center;gap:9px;flex-shrink:0;color:#d5b77d;font:700 15px 'DM Sans',Arial,sans-serif;letter-spacing:.05em}.pe-language button{border:0;background:transparent;color:#d5b77d;cursor:pointer;font:inherit;padding:8px 2px;opacity:.65}.pe-language button[aria-pressed="true"]{opacity:1;text-decoration:underline;text-underline-offset:5px}.pe-language button:hover{opacity:1}@media(max-width:650px){.pe-language{font-size:14px;gap:6px}header{gap:8px}}
+/* High-visibility bilingual selector, on every page */
+header .pe-language{display:flex!important;align-items:center!important;justify-content:center;gap:0!important;flex:0 0 auto;position:relative;z-index:50;border:2px solid #d5b77d;border-radius:7px;background:#101513f2;box-shadow:0 3px 16px #0009;overflow:hidden;white-space:nowrap;margin-left:8px;min-width:104px;min-height:44px;color:#d5b77d;font:800 16px 'DM Sans',Arial,sans-serif;letter-spacing:.02em}
+header .pe-language button{appearance:none;border:0;background:transparent;color:#f5f0e6;cursor:pointer;font:inherit;font-size:16px!important;letter-spacing:0;padding:12px 13px;min-width:50px;opacity:1;text-decoration:none!important}
+header .pe-language button[aria-pressed="true"]{background:#d5b77d;color:#101513}
+header .pe-language button:hover{background:#f5e2b7;color:#101513}
+header .pe-language span{display:none}
+@media(max-width:1150px){header{flex-wrap:wrap!important}header .pe-language{margin-left:auto}}
+@media(max-width:650px){header{gap:8px!important}header .pe-language{min-width:94px;min-height:42px;margin-left:auto}header .pe-language button{font-size:14px!important;padding:11px 10px;min-width:45px}}
