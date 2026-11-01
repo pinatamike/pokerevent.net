@@ -1,0 +1,46 @@
+name: Synchronize Spanish pages
+on:
+  push:
+    branches: [main]
+    paths:
+      - index.html
+      - ufc-championship/index.html
+      - ufc-fight-night/index.html
+      - nfl-championship/index.html
+      - super-bowl/index.html
+      - scripts/sync_spanish.py
+      - .github/workflows/sync-spanish.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: sync-spanish
+  cancel-in-progress: false
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Translate English changes to Spanish
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          if [ -z "$OPENAI_API_KEY" ]; then
+            echo "::error::Add repository secret OPENAI_API_KEY to enable automatic translation."
+            exit 1
+          fi
+          python scripts/sync_spanish.py
+      - name: Commit updated Spanish pages
+        run: |
+          git add es/
+          if ! git diff --cached --quiet; then
+            git config user.name "pokerevent-translation-bot"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "Sync Spanish pages from English content"
+            git push
+          fi
